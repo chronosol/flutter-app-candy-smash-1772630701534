@@ -2,6 +2,11 @@ name: Build Flutter App
 
 on:
   workflow_dispatch:
+  inputs:
+    app_name:
+      description: 'App name for artifact'
+      required: false
+      default: 'candy smash'
     inputs:
       platform:
         description: 'Build target (apk, ipa, web)'
